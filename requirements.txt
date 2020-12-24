@@ -1,4 +1,4 @@
-python==3.7.*
+python==3.8.*
 irc
 requests
 python-dotenv
@@ -6,8 +6,6 @@ setuptools
 
 tensorflow-gpu==2.3.*
 rasa==2.2.1
-rasa_core
-rasa_nlu==0.15.1
 rasa-ext-plugin
 matplotlib==3.2
 
