@@ -1,0 +1,22 @@
+python==3.7.*
+irc
+requests
+python-dotenv
+setuptools
+
+tensorflow-gpu==2.3.*
+rasa==2.2.1
+rasa_core
+rasa_nlu==0.15.1
+rasa-ext-plugin
+matplotlib==3.2
+
+# fix für installation von rasa_nlu
+# Windows Standard Einstellung für lange Dateinamen
+#    open regedit tool (using windows cmd)
+#    access the 'HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem' key
+#    change the 'LongPathsEnabled' value to 1
+#    reinstall sklearn using the command 'pip install --exists-action=i scikit-learn'
+
+# pip install tensorflow-gpu==2.3.* h5py rasa-ext-plugin matplotlib==3.2
+# pip install h5py rasa-ext-plugin matplotlib==3.2
