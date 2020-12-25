@@ -2,11 +2,19 @@ from sqlite3 import connect
 
 from tetuebot import sql_folder, db_folder
 
-cxn = connect(f"{db_folder}/database.db", check_same_thread=False)
-cur = cxn.cursor()
+import os
+
+try:
+	if not os.path.exists(db_folder):
+		os.makedirs(db_folder)
+	cxn = connect(f"{db_folder}/database.db", check_same_thread=False)
+	cur = cxn.cursor()
+except:
+	print(f"Could not create folder '{db_folder}'")
+
 
 def unsinnprint():
-    print("tata")
+	print("tata")
 
 def with_commit(func):
 	def inner(*args, **kwargs):
