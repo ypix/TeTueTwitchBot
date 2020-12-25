@@ -29,7 +29,7 @@ For help and enquiries, join the Carberra Discord server: https://bit.ly/carb-di
 
 ## References
 
-This repository has been folked from 
+This repository is a fork from 
 * https://github.com/Technik-Tueftler/TeTueTwitchBot
 
 This version uses rasa and tensorflow to detect abusing messages.
